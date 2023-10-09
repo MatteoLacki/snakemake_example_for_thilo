@@ -1,0 +1,36 @@
+G = [
+	"/mnt/ms/old/rawdata/gutamine/RAW",
+	"/mnt/ms/old/rawdata/gutamine/ARCHIVIERT/*",
+	"/mnt/ms/old/rawdata/gutamine/WIRD_GESICHERT/*",
+]
+
+M = [
+	"/mnt/ms/old/rawdata/majestix/RAW",
+	"/mnt/ms/old/rawdata/majestix/ARCHIVIERT/*",
+	"/mnt/ms/old/rawdata/majestix/WIRD_GESICHERT/*",
+]
+
+O = [
+	"/mnt/ms/old/rawdata/obelix/RAW_ttp",
+	"/mnt/ms/old/rawdata/obelix/ARCHIVIERT/*",
+	"/mnt/ms/old/rawdata/obelix/WIRD_GESICHERT/*",
+]
+
+F = [
+	"/mnt/ms/old/rawdata/falbala/RAW",
+	"/mnt/ms/old/rawdata/falbala/ARCHIVIERT/*",
+	"/mnt/ms/old/rawdata/falbala/WIRD_GESICHERT/*",
+]
+
+I = [
+	"/mnt/ms/old/rawdata/idefix/RAW",
+	"/mnt/ms/old/rawdata/idefix/ARCHIVIERT/*",
+	"/mnt/ms/old/rawdata/idefix/WIRD_GESICHERT/*",
+]
+
+V = [
+	"/mnt/ms/old/rawdata/verleihnix/RAW",
+	"/mnt/ms/old/rawdata/verleihnix/ARCHIVIERT/*",
+	"/mnt/ms/old/rawdata/verleihnix/WIRD_GESICHERT/*",
+]
+

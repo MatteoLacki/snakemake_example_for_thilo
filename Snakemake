@@ -1,0 +1,18 @@
+import tomllib
+
+def parse_config(path_to_config):
+	with open(path_to_config) as f:
+		data = tomllib.load(f)
+	print(data)
+	return data
+
+rule multiple_inputs_from_config:
+	input:
+		lambda path_to_config: parse_config(path_to_config)["inputs"]
+	output:
+		"{config}.toml"
+	shell:
+		"""
+		cat {input} > {output}
+		"""
+

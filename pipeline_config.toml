@@ -1,2 +1,4 @@
-output_folder = "/mnt/ms/new/processed/Q"
-diann_quants_folder = "/mnt/ms/new/processed/Q/diann/quants"
+user = "/mnt/ms/new/processed/Q/user"
+auto = "/mnt/ms/new/processed/Q/auto"
+
+diann_threads = "auto"

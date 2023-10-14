@@ -2,3 +2,4 @@ user = "/mnt/ms/new/processed/Q/user"
 auto = "/mnt/ms/new/processed/Q/auto"
 
 diann_threads = "auto"
+diann_version = "1.8.1"

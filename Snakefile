@@ -66,6 +66,20 @@ rule soft_link_server_location:
 
 
 
+# install diann version specified in the config file
+rule install_diann:
+    output:
+        # outputs a softlink to the diann installation
+        "dianns/{diann_version}/diann"
+    run:
+        # download diann from github and install it with apt, then remove the .deb installer
+        shell(f"wget https://github.com/vdemichev/DiaNN/releases/download/{config[diann_version]}/diann_{config[diann_version]}.deb"),
+        shell(f"apt install ./diann_{config[diann_version]}.deb"),
+        shell(f"rm ./diann_{config[diann_version]}.deb")
+        shell(f"ln -s /usr/diann/{config[diann_version]}/diann-{config[diann_version]} dianns/{config[diann_version]}/diann")
+
+
+
 rule get_d_folder_locally_for_worker:
     input:
         "folder_locations.toml"        
